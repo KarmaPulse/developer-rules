@@ -20,6 +20,7 @@ A continuación te presento una serie de reglas que nos gusta seguir a la hora d
 * [UpperCamelCase para nombres de clases](#uppercamelcase-para-nombres-de-clases)
 * [Mayúsculas para constantes](#mayúsculas-para-constantes)
 * [Nombres de carpetas y archivos](#nombres-de-carpetas-y-archivos)
+* [Nombres de repositorios](#nombres-de-repositorios)
 
 ### Bases de Datos
 
@@ -171,6 +172,23 @@ connector_replay.js
 twitterConnector/
 Connector_Replay.js
 ```
+
+### Nombres de repositorios
+
+Los nombres de repositorios tienen el siguiente formato:
+```
+<product>_<type>_<description>
+```
+Donde:
+
+#### Product
+Hace referencia al nombre del producto al que corresponde el repositorio: kpulse, kboard, kmetrics o kbrain
+
+#### Type
+Hace referencia al tipo de aplicación que se encuentra contenida en el repositorio: worker, client, api, product, etc.
+
+#### Description
+Hace referencia al nombre que identifica al repositorio: admin, site, hub_citizen etc.
 
 
 ## Bases de Datos
