@@ -243,11 +243,11 @@ Todos los recursos de infraetsructura deberan ser etiquetados bajo las siguiente
 
 #### Etiquetado
 
-El etiquetado presenta 2 componentes inciales la llave (key) y el valor (value), estos son libres pero para mantener un control hemos definido algunas reglas asi como los nombre de las principales llaves (keys) a usar.
+El etiquetado presenta 2 componentes iniciales la llave (key) y el valor (value), estos son libres pero para mantener un control hemos definido algunas reglas asi como los nombre de las principales llaves (key's) a usar.
 
 #### Llaves (keys) y Valores (values) Estandar
 
-Definimos 5 llaves que en el futuro podran crecer o diminuir, esto dependera en todo momento de las necesidades, les presento el listado de las llaves y sus respectivos valores:
+Definimos 5 llaves que en el futuro podran crecer o disminuir, esto dependera en todo momento de las necesidades, les presento el listado de las llaves y sus respectivos valores:
 
 - Name: Define el Nombre del recurso y es esta etiqueta la que nos permite identificar el recurso ya que este valor se lista en las primeras posiciones dentro de la consola de AWS (Amazon Web Services), su uso se rige y restringe a los siguientes ejemplos:
 		
@@ -278,10 +278,10 @@ Definimos 5 llaves que en el futuro podran crecer o diminuir, esto dependera en 
 				- KOperations	Karma Operaciones
 				- KCarl			Karma Carl (Interprete)
 
-- Stage: hace eferencia al escenario-ambiente (Stage), de programación al que pertenece o sirve el recurso de AWS, por ejemplo:
+- Stage: hace referencia al escenario-ambiente (Stage), de programación al que pertenece o sirve el recurso de AWS, por ejemplo:
 
 		Key 							Value 
-		Stage							<Abreviatura del Escenario>
+		Stage							<Abreviatura del Ambiente>
 
 			Abreviaturas Actuales:
 				- PROD			Ambiente Productivo
@@ -295,8 +295,8 @@ Definimos 5 llaves que en el futuro podran crecer o diminuir, esto dependera en 
 
 			Consumos Identificados:
 				- Computo			Uso de Poder Computacional para procesamiento
-				- Almacenamiento	Uso de Espacio de Almacenamiento ya sea Objetos o archivos
-				- Red				Uso de Transferencia de Datos por Red Local o Mundial
+				- Almacenamiento	Uso de Espacio de Almacenamiento ya sea objetos o archivos
+				- Red				Uso de Transferencía de Datos por Red Local o Mundial
 				- Base de Datos		Uso de Procesamiento y Almacenamiento en Base de Datos Relacional o No Relacional
 
 - Charge: Identificar si el tipo de cargo en la facturación de AWS.
@@ -305,6 +305,6 @@ Definimos 5 llaves que en el futuro podran crecer o diminuir, esto dependera en 
 		Charge								<Tipo de Cargo>
 
 			Cargos Establecidos:
-				- Unique			Cargo unico en la facturacion de AWS, esto significa que no se vera refleajo el cargo al siguiente mes.
+				- Unique			Cargo unico en la facturacion de AWS, esto significa que no se vera reflejado el cargo al siguiente periodo.
 				- Temporal			Cargo que se realizara durante un periodo o varios periodos, pero no sobrepasara los 3 periodos consecutivos en caso contrario debera ser un cargo recurrente.
-				- recurrente		Cargo que se realizara durante un minimo de 3 periodos de facturación.
+				- Recurrente		Cargo que se realizara durante un minimo de 3 periodos de facturación.
