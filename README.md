@@ -268,25 +268,33 @@ Definimos 5 llaves que en el futuro podran crecer o disminuir, esto dependera en
 		Key								Value
 		Product								<Abreviatura del Producto>
 
-			Abreviaturas Actuales:
-				- KClients		Karma Clientes
-				- KBrain		Karma Brain
-				- KPulse		Karma Pulse 
-				- KBoard		Karma Board's 
-				- KMetricsV1 	Karma Metrics Versión 1
-				- KMetricsV2	Karma Metrics Versión 2
-				- KOperations	Karma Operaciones
-				- KCarl			Karma Carl (Interprete)
+			Nomeclaturas Actuales:
+
+| Nomeclatura	|	Significado 	|
+|---------------|-------------------|
+KClients	|	Karma Clientes
+KBrain	|	Karma Brain
+KPulse	|	Karma Pulse 
+KBoard	|	Karma Board's 
+KMetricsV1	| 	Karma Metrics Versión 1
+KMetricsV2	|	Karma Metrics Versión 2
+KOperations	|	Karma Operaciones
+KCarl		|	Karma Carl (Interprete)
 
 - Stage: hace referencia al escenario-ambiente (Stage), de programación al que pertenece o sirve el recurso de AWS, por ejemplo:
 
 		Key 							Value 
 		Stage							<Abreviatura del Ambiente>
 
-			Abreviaturas Actuales:
-				- PROD			Ambiente Productivo
-				- DEV			Ambiente de Desarrollo
-				- QA			Ambiente de Calidad y Pruebas
+			Nomeclaturas Actuales:
+
+|	Nomeclatura 	|	Significado 	|
+|-------------------|-------------------|
+PROD	|	Ambiente Productivo
+DEV		|	Ambiente de Desarrollo
+QA		|	Ambiente de Calidad y Pruebas
+
+
 
 - Consuption: Indica el tipo de consumo en la facturacion de AWS, es uso correcto es:
 
@@ -294,10 +302,15 @@ Definimos 5 llaves que en el futuro podran crecer o disminuir, esto dependera en
 		Consuption							<Area de Consumo en AWS>
 
 			Consumos Identificados:
-				- Computo			Uso de Poder Computacional para procesamiento
-				- Almacenamiento	Uso de Espacio de Almacenamiento ya sea objetos o archivos
-				- Red				Uso de Transferencía de Datos por Red Local o Mundial
-				- Base de Datos		Uso de Procesamiento y Almacenamiento en Base de Datos Relacional o No Relacional
+
+| 	Consumo	|	Definición del Consumo 	|
+|-----------|---------------------------|
+Computo	|	Uso de Poder Computacional para procesamiento
+Almacenamiento	|	Uso de Espacio de Almacenamiento ya sea objetos o archivos
+Red	|	Uso de Transferencía de Datos por Red Local o Mundial
+Base de Datos	|	Uso de Procesamiento y Almacenamiento en Base de Datos Relacional o No Relacional
+
+
 
 - Charge: Identificar si el tipo de cargo en la facturación de AWS.
 
@@ -305,6 +318,11 @@ Definimos 5 llaves que en el futuro podran crecer o disminuir, esto dependera en
 		Charge								<Tipo de Cargo>
 
 			Cargos Establecidos:
-				- Unique			Cargo unico en la facturacion de AWS, esto significa que no se vera reflejado el cargo al siguiente periodo.
-				- Temporal			Cargo que se realizara durante un periodo o varios periodos, pero no sobrepasara los 3 periodos consecutivos en caso contrario debera ser un cargo recurrente.
-				- Recurrente		Cargo que se realizara durante un minimo de 3 periodos de facturación.
+
+|	Cargo	|	Definición del Cargo 	|
+|-----------|---------------------------|
+Unique	|	Cargo unico en la facturacion de AWS, esto significa que no se vera reflejado el cargo al siguiente periodo.
+Temporal	|	Cargo que se realizara durante un periodo o varios periodos, pero no sobrepasara los 3 periodos consecutivos en caso contrario debera ser un cargo recurrente.
+Recurrente	|	Cargo que se realizara durante un minimo de 3 periodos de facturación.
+
+
