@@ -251,26 +251,28 @@ Definimos 5 llaves que en el futuro podran crecer o disminuir, esto dependera en
 
 - Name: Define el Nombre del recurso y es esta etiqueta la que nos permite identificar el recurso ya que este valor se lista en las primeras posiciones dentro de la consola de AWS (Amazon Web Services), su uso se rige y restringe a los siguientes ejemplos:
 		
-		Key								Value
-		Name								<STAGE>-<Product>-<Version>-<NameOfResource>
+|	Key	|	Value	|
+|-------|-----------|
+Name	|	STAGE-Product-Version-NameOfResource
 	
+			Valores Permitidos y su Definición:
 
-			<STAGE> Nos indica en que etapa del desarrollo se encuentra o pertenece el recurso; los valores permitidos son: "DEV" para Identificar Desarrollo y "PROD" para Producción.
-
-			<Product> Nombre del Producto al que sirve el recurso; los valores permitidos son: KPulse, KMetrics, KBrain, KClients, KOperations y KBoard.
-
-			<Version> Version del producto que sirven; la estructura requerida y valida es: v<NumeroEntero>, ejemplo: "v1".
-
-			<Name> Nombre del servicio u aplicacion que contiene; los valores ejemplo son MongoDB, Redis, etc.
+|	Valor	|	Definición	|
+|-----------|---------------|
+STAGE	|	Nos indica en que etapa del desarrollo se encuentra o pertenece el recurso; los valores permitidos son: "DEV" para Identificar Desarrollo y "PROD" para Producción.
+Product	|	Nombre del Producto al que sirve el recurso; los valores permitidos son: KPulse, KMetrics, KBrain, KClients, KOperations y KBoard.
+Version	|	Version del producto que sirven; la estructura requerida y valida es: v<NumeroEntero>, ejemplo: "v1".
+Name	|	Nombre del servicio u aplicacion que contiene; los valores ejemplo son MongoDB, Redis, etc.
 
 - Product: Esta etiqueta nos ayudara a identificar para que producto de KarmaPulse esta sirviendo o conteniendo el recurso de AWS, el valor del tag se restringe a la abreviatura, sigla o nombre corto común tal como se muestra en los ejemplos:
 
-		Key								Value
-		Product								<Abreviatura del Producto>
+|	Key	|	Value	|
+|-------|-----------|
+Product	|	Abreviatura del Producto
 
-			Nomeclaturas Actuales:
+			Valores abreviados para productos actuales:
 
-| Nomeclatura	|	Significado 	|
+| Nomeclatura	|	Descripción	|
 |---------------|-------------------|
 KClients	|	Karma Clientes
 KBrain	|	Karma Brain
@@ -283,12 +285,13 @@ KCarl		|	Karma Carl (Interprete)
 
 - Stage: hace referencia al escenario-ambiente (Stage), de programación al que pertenece o sirve el recurso de AWS, por ejemplo:
 
-		Key 							Value 
-		Stage							<Abreviatura del Ambiente>
+|	Key	|	Value	|
+|-------|-----------| 
+Stage	|	Abreviatura del Ambiente
 
-			Nomeclaturas Actuales:
+			Valores Actuales para los ambientes:
 
-|	Nomeclatura 	|	Significado 	|
+|	Valor	|	Descripción 	|
 |-------------------|-------------------|
 PROD	|	Ambiente Productivo
 DEV		|	Ambiente de Desarrollo
@@ -298,10 +301,11 @@ QA		|	Ambiente de Calidad y Pruebas
 
 - Consuption: Indica el tipo de consumo en la facturacion de AWS, es uso correcto es:
 
-		Key								Value
-		Consuption							<Area de Consumo en AWS>
+|	Key	|	Value	|
+|-------|-----------| 
+Consuption	|	Area de Consumo en AWS
 
-			Consumos Identificados:
+			Valores para Consumos Identificados:
 
 | 	Consumo	|	Definición del Consumo 	|
 |-----------|---------------------------|
@@ -314,10 +318,11 @@ Base de Datos	|	Uso de Procesamiento y Almacenamiento en Base de Datos Relaciona
 
 - Charge: Identificar si el tipo de cargo en la facturación de AWS.
 
-		Key								Value
-		Charge								<Tipo de Cargo>
+|	Key	|	Value	|
+|-------|-----------| 
+Charge	|	Tipo de Cargo
 
-			Cargos Establecidos:
+			Valores para Cargos Establecidos:
 
 |	Cargo	|	Definición del Cargo 	|
 |-----------|---------------------------|
