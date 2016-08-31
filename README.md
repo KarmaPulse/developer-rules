@@ -229,23 +229,23 @@ PersonAccounts
 Todas las letras del nombre de la columna o llave deben de ser minúsculas. En caso de que el nombre contenga más de dos palabras, éstas deberán estar separadas por medio de guiones bajos. Finalmente, todos los nombres deben de estar en inglés.
 
 
-## Misceláneo
+# Misceláneo
 
-### URLs
+## URLs
 
 Todas las letras de las urls deben de ir en minúsculas. Si una url está compuesta por dos o más palabras, éstas deben de ir separadas por un guión medio y todas las palabras que conformen la url deben de estar en inglés.
 
 ## Recursos de Infraestructura
 
-### Etiquetas
+## Etiquetas
 
 Todos los recursos de infraetsructura deberan ser etiquetados bajo las siguientes reglas, mismas que nos permitiran identificar el recurso, así como el ambiente y otros datos relevantes, al mismo tiempo nos facilitaran el manejo de la información para la generación y entrega de reportes.
 
-#### Etiquetado
+## Etiquetado
 
 El etiquetado presenta 2 componentes iniciales la llave (key) y el valor (value), estos son libres pero para mantener un control hemos definido algunas reglas asi como los nombre de las principales llaves (key's) a usar.
 
-#### Llaves (keys) y Valores (values) Estandar
+## Llaves (keys) y Valores (values) Estandar
 
 Definimos 5 llaves que en el futuro podran crecer o disminuir, esto dependera en todo momento de las necesidades, les presento el listado de las llaves y sus respectivos valores:
 
@@ -254,8 +254,8 @@ Definimos 5 llaves que en el futuro podran crecer o disminuir, esto dependera en
 |	Key	|	Value	|
 |-------|-----------|
 Name	|	STAGE-Product-Version-NameOfResource
-	
-			Valores Permitidos y su Definición:
+
+#### Valores Permitidos y su Definición:
 
 |	Valor	|	Definición	|
 |-----------|---------------|
@@ -270,7 +270,7 @@ Name	|	Nombre del servicio u aplicacion que contiene; los valores ejemplo son Mo
 |-------|-----------|
 Product	|	Abreviatura del Producto
 
-			Valores abreviados para productos actuales:
+#### Valores abreviados para productos actuales:
 
 | Nomeclatura	|	Descripción	|
 |---------------|-------------------|
@@ -289,7 +289,7 @@ KCarl		|	Karma Carl (Interprete)
 |-------|-----------| 
 Stage	|	Abreviatura del Ambiente
 
-			Valores Actuales para los ambientes:
+#### Valores Actuales para los ambientes:
 
 |	Valor	|	Descripción 	|
 |-------------------|-------------------|
@@ -305,7 +305,7 @@ QA		|	Ambiente de Calidad y Pruebas
 |-------|-----------| 
 Consuption	|	Area de Consumo en AWS
 
-			Valores para Consumos Identificados:
+####  Valores para Consumos Identificados:
 
 | 	Consumo	|	Definición del Consumo 	|
 |-----------|---------------------------|
@@ -322,7 +322,7 @@ Base de Datos	|	Uso de Procesamiento y Almacenamiento en Base de Datos Relaciona
 |-------|-----------| 
 Charge	|	Tipo de Cargo
 
-			Valores para Cargos Establecidos:
+#### Valores para Cargos Establecidos:
 
 |	Cargo	|	Definición del Cargo 	|
 |-----------|---------------------------|
