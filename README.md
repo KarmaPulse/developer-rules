@@ -32,6 +32,10 @@ A continuación te presento una serie de reglas que nos gusta seguir a la hora d
 
 * [URLs](#urls)
 
+### Recursos de Infraestructura
+
+* [Etiquetas](#Etiquetas)
+
 ## Formato
 
 ### Indentación a cuatro espacios
@@ -225,8 +229,105 @@ PersonAccounts
 Todas las letras del nombre de la columna o llave deben de ser minúsculas. En caso de que el nombre contenga más de dos palabras, éstas deberán estar separadas por medio de guiones bajos. Finalmente, todos los nombres deben de estar en inglés.
 
 
-## Misceláneo
+# Misceláneo
 
-### URLs
+## URLs
 
 Todas las letras de las urls deben de ir en minúsculas. Si una url está compuesta por dos o más palabras, éstas deben de ir separadas por un guión medio y todas las palabras que conformen la url deben de estar en inglés.
+
+## Recursos de Infraestructura
+
+## Etiquetas
+
+Todos los recursos de infraetsructura deberan ser etiquetados bajo las siguientes reglas, mismas que nos permitiran identificar el recurso, así como el ambiente y otros datos relevantes, al mismo tiempo nos facilitaran el manejo de la información para la generación y entrega de reportes.
+
+## Etiquetado
+
+El etiquetado presenta 2 componentes iniciales la llave (key) y el valor (value), estos son libres pero para mantener un control hemos definido algunas reglas asi como los nombre de las principales llaves (key's) a usar.
+
+## Llaves (keys) y Valores (values) Estandar
+
+Definimos 5 llaves que en el futuro podran crecer o disminuir, esto dependera en todo momento de las necesidades, les presento el listado de las llaves y sus respectivos valores:
+
+- Name: Define el Nombre del recurso y es esta etiqueta la que nos permite identificar el recurso ya que este valor se lista en las primeras posiciones dentro de la consola de AWS (Amazon Web Services), su uso se rige y restringe a los siguientes ejemplos:
+		
+|	Key	|	Value	|
+|-------|-----------|
+Name	|	STAGE-Product-Version-NameOfResource
+
+#### Valores Permitidos y su Definición:
+
+|	Valor	|	Definición	|
+|-----------|---------------|
+STAGE	|	Nos indica en que etapa del desarrollo se encuentra o pertenece el recurso; los valores permitidos son: "DEV" para Identificar Desarrollo y "PROD" para Producción.
+Product	|	Nombre del Producto al que sirve el recurso; los valores permitidos son: KPulse, KMetrics, KBrain, KClients, KOperations y KBoard.
+Version	|	Version del producto que sirven; la estructura requerida y valida es: v<NumeroEntero>, ejemplo: "v1".
+Name	|	Nombre del servicio u aplicacion que contiene; los valores ejemplo son MongoDB, Redis, etc.
+
+- Product: Esta etiqueta nos ayudara a identificar para que producto de KarmaPulse esta sirviendo o conteniendo el recurso de AWS, el valor del tag se restringe a la abreviatura, sigla o nombre corto común tal como se muestra en los ejemplos:
+
+|	Key	|	Value	|
+|-------|-----------|
+Product	|	Abreviatura del Producto
+
+#### Valores abreviados para productos actuales:
+
+| Nomeclatura	|	Descripción	|
+|---------------|-------------------|
+KClients	|	Karma Clientes
+KBrain	|	Karma Brain
+KPulse	|	Karma Pulse 
+KBoard	|	Karma Board's 
+KMetricsV1	| 	Karma Metrics Versión 1
+KMetricsV2	|	Karma Metrics Versión 2
+KOperations	|	Karma Operaciones
+KCarl		|	Karma Carl (Interprete)
+
+- Stage: hace referencia al escenario-ambiente (Stage), de programación al que pertenece o sirve el recurso de AWS, por ejemplo:
+
+|	Key	|	Value	|
+|-------|-----------| 
+Stage	|	Abreviatura del Ambiente
+
+#### Valores Actuales para los ambientes:
+
+|	Valor	|	Descripción 	|
+|-------------------|-------------------|
+PROD	|	Ambiente Productivo
+DEV		|	Ambiente de Desarrollo
+QA		|	Ambiente de Calidad y Pruebas
+
+
+
+- Consuption: Indica el tipo de consumo en la facturacion de AWS, es uso correcto es:
+
+|	Key	|	Value	|
+|-------|-----------| 
+Consuption	|	Area de Consumo en AWS
+
+####  Valores para Consumos Identificados:
+
+| 	Consumo	|	Definición del Consumo 	|
+|-----------|---------------------------|
+Computo	|	Uso de Poder Computacional para procesamiento
+Almacenamiento	|	Uso de Espacio de Almacenamiento ya sea objetos o archivos
+Red	|	Uso de Transferencía de Datos por Red Local o Mundial
+Base de Datos	|	Uso de Procesamiento y Almacenamiento en Base de Datos Relacional o No Relacional
+
+
+
+- Charge: Identificar si el tipo de cargo en la facturación de AWS.
+
+|	Key	|	Value	|
+|-------|-----------| 
+Charge	|	Tipo de Cargo
+
+#### Valores para Cargos Establecidos:
+
+|	Cargo	|	Definición del Cargo 	|
+|-----------|---------------------------|
+Unique	|	Cargo unico en la facturacion de AWS, esto significa que no se vera reflejado el cargo al siguiente periodo.
+Temporal	|	Cargo que se realizara durante un periodo o varios periodos, pero no sobrepasara los 3 periodos consecutivos en caso contrario debera ser un cargo recurrente.
+Recurrente	|	Cargo que se realizara durante un minimo de 3 periodos de facturación.
+
+
