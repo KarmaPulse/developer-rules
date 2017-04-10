@@ -50,9 +50,9 @@ Usa saltos de linea tipo UNIX (`\n`), y deja un salto de linea al final de cada 
 
 Así como cepillas tus dientes después de cada comida, elimina los saltos de línea y espacios en blanco que estén de más en tu código antes de dar por terminada esa brillante función, script o clase. De lo contrario, con el tiempo, el olor producido por la imprudencia y el abandono ahuyentará a tus compañeros de trabajo.
 
-### 80 caracteres por línea
+### 100 caracteres por línea
 
-Limita tus líneas a 80 caracteres. Sí, con el pasar de los años las pantallas se han vuelto más grandes, pero no así tu cerebro.
+Limita tus líneas a 100 caracteres. Sí, con el pasar de los años las pantallas se han vuelto más grandes, pero no así tu cerebro.
 
 ### La llave que abre ¡va en la misma línea!
 
@@ -250,7 +250,7 @@ El etiquetado presenta 2 componentes iniciales la llave (key) y el valor (value)
 Definimos 5 llaves que en el futuro podran crecer o disminuir, esto dependera en todo momento de las necesidades, les presento el listado de las llaves y sus respectivos valores:
 
 - Name: Define el Nombre del recurso y es esta etiqueta la que nos permite identificar el recurso ya que este valor se lista en las primeras posiciones dentro de la consola de AWS (Amazon Web Services), su uso se rige y restringe a los siguientes ejemplos:
-		
+
 |	Key	|	Value	|
 |-------|-----------|
 Name	|	STAGE-Product-Version-NameOfResource
@@ -276,8 +276,8 @@ Product	|	Abreviatura del Producto
 |---------------|-------------------|
 KClients	|	Karma Clientes
 KBrain	|	Karma Brain
-KPulse	|	Karma Pulse 
-KBoard	|	Karma Board's 
+KPulse	|	Karma Pulse
+KBoard	|	Karma Board's
 KMetricsV1	| 	Karma Metrics Versión 1
 KMetricsV2	|	Karma Metrics Versión 2
 KOperations	|	Karma Operaciones
@@ -286,7 +286,7 @@ KCarl		|	Karma Carl (Interprete)
 - Stage: hace referencia al escenario-ambiente (Stage), de programación al que pertenece o sirve el recurso de AWS, por ejemplo:
 
 |	Key	|	Value	|
-|-------|-----------| 
+|-------|-----------|
 Stage	|	Abreviatura del Ambiente
 
 #### Valores Actuales para los ambientes:
@@ -302,7 +302,7 @@ QA		|	Ambiente de Calidad y Pruebas
 - Consuption: Indica el tipo de consumo en la facturacion de AWS, es uso correcto es:
 
 |	Key	|	Value	|
-|-------|-----------| 
+|-------|-----------|
 Consuption	|	Area de Consumo en AWS
 
 ####  Valores para Consumos Identificados:
@@ -319,7 +319,7 @@ Base de Datos	|	Uso de Procesamiento y Almacenamiento en Base de Datos Relaciona
 - Charge: Identificar si el tipo de cargo en la facturación de AWS.
 
 |	Key	|	Value	|
-|-------|-----------| 
+|-------|-----------|
 Charge	|	Tipo de Cargo
 
 #### Valores para Cargos Establecidos:
@@ -329,5 +329,3 @@ Charge	|	Tipo de Cargo
 Unique	|	Cargo unico en la facturacion de AWS, esto significa que no se vera reflejado el cargo al siguiente periodo.
 Temporal	|	Cargo que se realizara durante un periodo o varios periodos, pero no sobrepasara los 3 periodos consecutivos en caso contrario debera ser un cargo recurrente.
 Recurrente	|	Cargo que se realizara durante un minimo de 3 periodos de facturación.
-
-
